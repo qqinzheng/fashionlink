@@ -1,0 +1,474 @@
+body,html{
+    min-width: 1290px;
+}
+.container .header-inner,.container .section .section-inner{
+    width:1190px;
+    margin:0px auto;
+}
+
+body.header-fixed .container .banner{
+    margin-top:90px;
+}
+
+.container .banner{
+    position:relative;
+}
+
+body.header-fixed .container .header{
+    background-color:#fff;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    border-bottom:1px solid #eeeeee;
+    box-shadow: 1px 1px 2px #eeeeee;
+}
+
+.container .back-top{
+    position: fixed;
+    right:52px;
+    bottom:100px;
+    background:url(../images/back_top.png) no-repeat;
+    background-size:66px 66px;
+    height:66px;
+    width:66px;
+    cursor:pointer;
+    opacity: 0;
+    z-index:99999999;
+    font-size:12px;
+    transition: opacity .5s;
+    line-height:66px;
+    text-align: center;
+    color:#717171;
+}
+
+.container .back-top.show{
+    opacity: 1;
+}
+
+.container .header .logo{
+    background:url(../images/logo.png) no-repeat;
+    background-size:100% 100%;
+    width:95px;
+    height:60px;
+    margin:15px 275px 0px 0px;
+    float:left;
+}
+
+.container .header .nav{
+    list-style: none;
+    padding:0px;
+    float:left;
+}
+
+.container .header .nav .nav-item{
+    font-size:20px;
+    font-family: Arial;
+    height:90px;
+    float:left;
+    line-height: 90px;
+    list-style: none;
+    margin:0px 0px 0px 30px;
+    position:relative;
+    transition: color .4s;
+}
+
+.ja .container .header .nav .nav-item{
+    font-size:12px;
+    font-weight: 600;
+    margin:0px 0px 0px 15px;
+}
+
+.container .header .nav .nav-item .line{
+    opacity:0;
+    width:100%;
+    top:0px;
+    left:0px;
+    transition: opacity .5s ease;
+    border-top:4px solid #da2720; 
+}
+
+.container .header .nav .nav-item:hover .line,.container .header .nav .nav-item.active .line{
+    opacity: 1;
+    position:absolute;
+}
+
+.container .header .nav .nav-item:hover,.container .header .nav .nav-item.active {
+    color:#d6251f;
+}
+
+.container .banner img{
+    width:100%;
+}
+
+.container .sections .section{
+    background-color:#fff;
+}
+
+.container .sections .section .section-inner{
+    padding-top:40px;
+}
+
+.en .container .sections .section .title{
+     font-family: 'bell mt';
+     font-size:22px;
+}
+
+.en .container .sections .section .des-box .des-title,
+.en .container .sections .section.services .service,
+.en .container .sections .section .card-title{
+    font-family: 'bangla';
+}
+
+.container .sections .section .des-box .des-title{
+    font-size:18px;
+    margin:20px 0px;
+    text-align: center;
+}
+
+
+.container .sections .section .des-content,
+.container .section.contactus .card-form-item,
+.container .sections .btn-more{
+    font-family: "Microsoft YaHei",sans-serif;
+}
+
+.container .sections .section .des-content{
+    font-size:18px;
+    margin:0px auto 0px auto;
+    line-height: 24px;
+    text-align:left;
+}
+
+.container .sections .section .title{
+    font-size:22px;
+    text-align: center;
+    margin:0px 0px 40px 0px;
+    position:relative;
+    background-color:inherit;
+}
+
+.container .sections .section .title .decoration .rhomebus_min,
+.container .sections .section .title .decoration .line-left,
+.container .sections .section .title .decoration .line-right{
+      position:absolute;
+      top:50%;
+     
+}
+
+.container .sections .section .title .decoration .line-left,
+.container .sections .section .title .decoration .line-right{
+    width:100px;
+    border-top:1px solid #000;
+    margin-top:-6px;
+}
+
+.container .sections .section .title .decoration .line-left{
+    left:-15px;
+}
+
+.container .sections .section .title .decoration .line-right{
+    right:-15px;
+}
+
+.container .sections .section .title .decoration .rhomebus_min{
+    height:12px;
+    width:24px;
+    left:50%;
+    margin-left:-12px;
+    margin-top:-12px;
+    background:url(../images/rhomebus_min.png) no-repeat center;
+    background-color:inherit;
+    background-size:12px;
+}
+.container .sections .section .title .decoration{
+    height:20px;
+    width:200px;
+    margin:0px auto;
+    margin:20px auto 0px auto;
+    position:relative;
+    background-color:inherit;
+}
+
+// about us
+
+.container .sections .section .aboutus  .left,
+.container .sections .section .aboutus .vertical-middle
+{
+    width:634px;
+}
+.container .sections .section .aboutus .right{
+    width:556px;
+}
+.container .sections .section .aboutus .left,
+.container .sections .section .aboutus .right,
+.container .sections .section .aboutus .vertical-middle{
+    height:400px;
+}
+
+.container .sections .section .aboutus .des-box .des-title .line {
+    display:block;
+    width:52px;
+    margin:20px auto 0px auto;
+    border-top: 2px solid #000;
+}
+
+.container .sections .section .aboutus .des-content{
+    width:450px;
+    margin:20px auto 0px auto;
+    text-align: left;
+}
+
+.container .sections .section .aboutus .video {
+    position: relative;
+}
+
+.container .sections .section .aboutus .video .video-js .vjs-big-play-button{
+    top:50%;
+    left:50%;
+    margin: -0.75em 0px 0px -1.5em;
+}
+
+.container .sections .section .aboutus .video .video-js .vjs-big-play-button{
+    border:.06666em solid #a9a9ab;
+    color:#a9a9ab;
+}
+
+.container .sections .section .aboutus .video .my-player-dimensions,
+.container .sections .section .aboutus .video .video-js{
+    height:100%;
+    width:100%;
+}
+
+.container .sections .section .aboutus .video .poster{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+// advantages
+
+.container .sections .section.advantages{
+    background-color:#f7f7f7;
+    padding:0px 0px 50px 0px;
+}
+
+.container .sections .section.advantages .left{
+    width:556px;
+    padding:0px 0px 0px 78px;
+}
+.container .sections .section.advantages .right {
+    width:556px;
+}
+.container .section.advantages .adv .left,
+.container .section.advantages .adv .vertical-middle,
+.container .section.advantages .adv .right{
+    height:350px;
+}
+.container .section.advantages .adv{
+    margin:0px 0px 50px 0px;
+}
+.container .section.advantages .middle-box{
+    margin:80px auto 60px auto;
+}
+
+.container .section.advantages .right .des-content{
+    width:432px;
+    margin:0px auto;
+}
+
+.container .section.advantages .left .des-content{
+    width:481px;
+    margin:0px auto;
+}
+
+//Services
+.container .sections .section.services{
+    background:url(../images/services_bg.jpg) no-repeat;
+    background-size:100% 100%;
+    padding:0px 0px 60px 0px;
+    overflow: hidden;
+}
+.container .sections .section.services .title,
+.container .sections .section.services .decoration .line-left,
+.container .sections .section.services .decoration .line-right,
+.container .sections .section.services .decoration{
+    color:#fff;
+    border-color: #fff;
+}
+.container .sections .section.services .service-list{
+    padding:0px 0px 0px 45px;
+    height:420px;
+}
+
+.container .sections .section.services  .service-list .service{
+    height:412px;
+    width:250px;
+    float:left;
+    margin-right:34px;
+    color:#f7f7f7;
+}
+
+.section.services .service-list .service.sourcing{
+     background:url(../images/service_01.png) no-repeat;
+}
+
+.section.services .service-list .service.perching{
+     background:url(../images/service_02.png) no-repeat;
+}
+
+.section.services .service-list .service.logistics{
+     background:url(../images/service_03.png) no-repeat;
+}
+
+.section.services .service-list .service.custom-service{
+     background:url(../images/service_04.png) no-repeat;
+}
+
+.section.services .service-list .service .service-content{
+    margin-top:193px;
+    height:126px;
+    text-align: center;
+}
+
+.section.services  .service-list .service-title{
+    height:70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+//   Products
+.container .sections .section.products{
+    padding-bottom:48px;
+    background-color:#f7f7f7;
+}
+
+.container .sections .section.products .title .jump{
+    color:#d6251f;
+    font-size:18px;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-weight: 400;
+}
+
+.container .sections .section.products .comp{
+    width:471px;
+    height:432px;
+    margin:0px auto 48px auto;
+}
+
+.container .sections .section.products .vcodes .vcode{
+    float:left;
+}
+
+.container .section.products .vcodes .vcode .vertical-middle{
+    height:135px;
+    width:358px;
+    text-align: left;
+    font-family: Arial;
+    font-size:20px;    
+    padding:0px 15px 0px 141px;
+}
+
+.section.products .vcodes .vcode.buyer{
+    background:url(../images/vcode_buyer.jpg) no-repeat;
+}
+
+.section.products .vcodes .vcode.seller{
+    background:url(../images/vcode_seller.jpg) no-repeat;
+}
+
+.section.products .vcodes .vcode.mobile{
+    background:url(../images/vcode_mobile.jpg) no-repeat;
+}
+
+.container .sections .section.products .vcode-middle{
+    margin:0px 55px;
+}
+
+//self-brand
+.container .sections .section.self-brand{
+    padding:60px 0px 70px 0px;
+}
+.container .sections .section.self-brand .right,
+.container .sections .section.self-brand .vertical-middle
+{
+    width:671px;
+    height:376px;
+}
+
+.container .sections .section.self-brand .des-content{
+    width:490px;
+    margin:0px auto;
+}
+
+.container .sections .section.self-brand .title{
+    margin:12px 0px 34px 0px;
+}
+
+.container .sections .section.self-brand .btn-more{
+    color:#d6251f;
+    display:block;
+    width:105px;
+    height:35px;
+    text-align: center;
+    line-height: 30px;
+    font-size:18px;
+    border:1px solid #d6251f;
+    margin:50px auto 0px auto;
+}
+
+//issues
+.container .sections .section.issues{
+    background-color:#f7f7f7;
+}
+
+//contactus
+.container .sections .section.contactus{
+    background:url(../images/contact_bg.jpg) no-repeat;
+    background-size:100% 100%;
+    padding:0px 0px 60px 0px;
+}
+
+.container .section.contactus .card{
+    height:216px;
+    width:555px;
+    padding:29px 0px 0px 25px;
+    background:url(../images/box.png) no-repeat;
+    border-bottom:4px solid #da2720; 
+}
+
+.container .section.contactus .card_1{
+    margin-right:30px;
+}
+
+.container .section.contactus .card_1 .card-form-item{
+    margin:14px 0px;
+}
+
+.container .section.contactus .card-title{
+    height:20px;
+    line-height:20px;
+    padding-left:38px;
+    background:url(../images/card_icon.png) no-repeat;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.container .section.contactus .card_1 .card-title{
+    margin-bottom:45px;
+}
+.container .section.contactus .card-form-item{
+    font-size:14px;
+    margin:12px 0px;
+}
+.container .section.contactus .card-form-item .label{
+    width:65px;
+    display:inline-block;
+    vertical-align: top;
+    text-align:right;
+}
+.container .section.contactus .card-form-item .text{
+    display:inline-block;
+    width:435px;
+}
+

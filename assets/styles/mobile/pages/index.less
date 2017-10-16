@@ -1,0 +1,449 @@
+.container .header-inner,.container .section .section-inner{
+    margin:0px auto;
+}
+
+body.header-fixed .container .banner{
+    margin-top:90px;
+}
+
+.container .banner{
+    position:relative;
+}
+
+body.header-fixed .container .header{
+    background-color:#fff;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    border-bottom:1px solid #eeeeee;
+    box-shadow: 1px 1px 2px #eeeeee;
+    overflow:hidden;
+}
+
+.container .back-top{
+    position: fixed;
+    right:10px;
+    bottom:100px;
+    background:url(../images/back_top.png) no-repeat;
+    background-size:cover;
+    height:50px;
+    width:50px;
+    cursor:pointer;
+    opacity: 0;
+    z-index:99999999;
+    font-size:12px;
+    transition: opacity .5s;
+    line-height:50px;
+    text-align: center;
+    color:#717171;
+}
+
+.container .back-top.show{
+    opacity: 1;
+}
+
+.container .header .nav{
+    list-style: none;
+    padding:0px;
+    overflow:hidden;
+    height:40px;
+    width: 400%;
+    line-height: 40px;
+    transition:transform .5s;
+}
+
+.container .header .nav .nav-item{
+    font-size:14px;
+    font-family: Arial;
+    float:left;
+    list-style: none;
+    padding:0px 18px;
+    position:relative;
+    transition: color .4s;
+}
+
+.ja .container .header .nav .nav-item{
+    font-size:12px;
+    font-weight: 600;
+    margin:0px 0px 0px 15px;
+}
+
+.container .header .nav .nav-item .line{
+    opacity:0;
+    bottom:0px;
+    left:15px;
+    right:15px;
+    transition: opacity .5s ease;
+    border-bottom:4px solid #da2720; 
+}
+
+.container .header .nav .nav-item:hover .line,.container .header .nav .nav-item.active .line{
+    opacity: 1;
+    position:absolute;
+}
+
+.container .header .nav .nav-item:hover,.container .header .nav .nav-item.active {
+    color:#d6251f;
+}
+
+.container .banner{
+  height:158px;
+}
+
+.container .sections .section{
+    background-color:#fff;
+}
+
+.container .sections .section .section-inner{
+    padding:25px 10px  0px 10px;
+}
+
+.container .sections .section .section-pic{
+    width:100%;
+}
+
+.en .container .sections .section .title{
+     font-family: 'bell mt';
+}
+
+.en .container .sections .section .des-box .des-title,
+.en .container .sections .section.services .service,
+.en .container .sections .section .card-title{
+    font-family: 'bangla';
+}
+
+.container .sections .section .des-box .des-title{
+    font-size:15px;
+    margin:12px 0px;
+    text-align: left;
+}
+
+
+.container .sections .section .des-content,
+.container .section.contactus .card-form-item,
+.container .sections .btn-more{
+    font-family: "Microsoft YaHei",sans-serif;
+}
+
+.container .sections .section .des-content{
+    font-size:14px;
+    margin:0px auto 0px auto;
+    line-height: 24px;
+    text-align:left;
+}
+
+.container .sections .section .title{
+    font-size:17px;
+    text-align: center;
+    margin:0px 0px 20px 0px;
+    position:relative;
+    background-color:inherit;
+}
+
+.container .sections .section .title .decoration .rhomebus_min,
+.container .sections .section .title .decoration .line-left,
+.container .sections .section .title .decoration .line-right{
+      position:absolute;
+      top:50%;
+}
+
+.container .sections .section .title .decoration .line-left,
+.container .sections .section .title .decoration .line-right{
+    width:100px;
+    border-top:1px solid #000;
+    margin-top:-6px;
+}
+
+.container .sections .section .title .decoration .line-left{
+    left:-15px;
+}
+
+.container .sections .section .title .decoration .line-right{
+    right:-15px;
+}
+
+.container .sections .section .title .decoration .rhomebus_min{
+    height:12px;
+    width:24px;
+    left:50%;
+    margin-left:-12px;
+    margin-top:-12px;
+    background:url(../images/rhomebus_min.png) no-repeat center;
+    background-color:inherit;
+    background-size:12px;
+}
+.container .sections .section .title .decoration{
+    height:20px;
+    width:200px;
+    margin:0px auto;
+    margin:10px auto 0px auto;
+    position:relative;
+    background-color:inherit;
+}
+
+// about us
+.container .sections .section .aboutus .video{
+    position: relative;
+}
+
+.container .section .aboutus{
+    padding:0px 0px 35px 0px;
+}
+
+.container .sections .section .aboutus .des-box .des-title .line {
+    display:block;
+    width:25px;
+    margin:10px 0px 0px 0px;
+    border-top: 2px solid #000;
+}
+
+.container .sections .section .aboutus .des-content{
+    margin:20px auto 0px auto;
+    text-align: left;
+}
+.container .sections .section .aboutus .vision{
+    margin:58px 0px 0px 0px;
+}
+
+.container .sections .section .aboutus .video{
+    height:225px;
+    width:355px;
+    overflow:hidden;
+}
+
+.container .sections .section .aboutus .video .video-js .vjs-big-play-button{
+    top:50%;
+    left:50%;
+    margin: -0.75em 0px 0px -1.5em;
+}
+
+.container .sections .section .aboutus .video .video-js .vjs-big-play-button{
+    border:.06666em solid #a9a9ab;
+    color:#a9a9ab;
+}
+
+.container .sections .section .aboutus .video .my-player-dimensions,
+.container .sections  .section .aboutus .video .plyr--ready,
+.container .sections .section .aboutus .video .video-js{
+    height:100%;
+    width:100%;
+}
+
+.container .sections .section .aboutus .video #my-player{
+    height:225px;
+    width:355px;
+    background:url(../images/mobile/video-poster.jpg) no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+.container .sections .section .aboutus .video .poster{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+// advantages
+
+.container .sections .section.advantages{
+    background-color:#f7f7f7;
+    overflow:hidden;
+}
+
+.container .section.advantages .adv{
+    margin:0px 0px 50px 0px;
+}
+
+//Services
+.container .sections .section.services{
+    background:url(../images/mobile/services_bg.jpg) no-repeat;
+    background-size:100% 100%;
+    padding:0px 0px 60px 0px;
+    overflow: hidden;
+}
+.container .sections .section.services .title,
+.container .sections .section.services .decoration .line-left,
+.container .sections .section.services .decoration .line-right,
+.container .sections .section.services .decoration{
+    color:#fff;
+    border-color: #fff;
+}
+.container .sections .section.services .service-list{
+    padding:0px 0px 0px 45px;
+}
+
+.container .sections .section.services  .service-list .service{
+    height:206px;
+    width:125px;
+    float:left;
+    margin:0px 20px 20px 0px;
+    color:#f7f7f7;
+    background-size:cover;
+}
+
+.section.services .service-list .service.sourcing{
+     background:url(../images/service_01.png) no-repeat;
+}
+
+.section.services .service-list .service.perching{
+     background:url(../images/service_02.png) no-repeat;
+}
+
+.section.services .service-list .service.logistics{
+     background:url(../images/service_03.png) no-repeat;
+}
+
+.section.services .service-list .service.custom-service{
+     background:url(../images/service_04.png) no-repeat;
+}
+
+.section.services .service-list .service .service-content{
+    margin-top:90px;
+    height:78px;
+    font-size:10px;
+    text-align: center;
+}
+
+.section.services  .service-list .service-title{
+    height:35px;
+    line-height: 35px;
+    font-size:14px;
+    text-align: center;
+}
+
+//   Products
+.container .sections .section.products{
+    padding-bottom:48px;
+    background-color:#f7f7f7;
+}
+
+.container .sections .section.products .title .jump{
+    color:#d6251f;
+    font-size:18px;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-weight: 400;
+}
+
+.container .sections .section.products .comp{
+    margin:0px auto 48px auto;
+    padding:0px 20px;
+}
+
+.container .sections .section.products .vcodes .vcode{
+    width:355px;
+    height:115px;
+    margin:0px 0px 10px 0px;
+    position:relative;
+}
+
+.container .sections .section.products .vcodes .vcode-content{
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:150px;
+}
+
+.container .section.products .vcodes .vcode .vertical-middle{
+    height:115px;
+    width:355px;
+    text-align: left;
+    font-family: Arial;
+    font-size:16px;    
+    padding:0px 22px 0px 0px;
+}
+
+.section.products .vcodes .vcode .vcode-img{
+    width:356px;
+    height:113px;
+}
+
+//self-brand
+.container .sections .section.self-brand{
+    padding:0px 0px 30px 0px;
+}
+.container .sections .section.self-brand .des-content{
+    margin:15px 0px 0px 0px;
+}
+
+.container .sections .section.self-brand .btn-more{
+    color:#d6251f;
+    display:block;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    font-size:19px;
+    border:1px solid #d6251f;
+    margin:25px 0px 0px 0px;
+}
+
+//issues
+.container .sections .section.issues{
+    background-color:#f7f7f7;
+}
+
+.container .sections .section.issues .cd-timeline-content img{
+    width:137px;
+}
+
+//contactus
+.container .sections .section.contactus{
+    background:url(../images/mobile/contact_bg.jpg) no-repeat;
+    background-size:100% 100%;
+    padding:0px 0px 20px 0px;
+}
+
+.container .section.contactus .card{
+    height:182px;
+    padding:16px 0px 0px 20px;
+    background:url(../images/box.png) no-repeat;
+    border-bottom:4px solid #da2720; 
+    margin:0px 0px 14px 0px;
+}
+
+.container .section.contactus .card_1 .card-form-item{
+    margin:14px 0px;
+}
+
+.container .section.contactus .card-title{
+    height:20px;
+    line-height:20px;
+    padding-left:38px;
+    background:url(../images/card_icon.png) no-repeat;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.container .section.contactus .card_1 .card-title{
+    margin-bottom:16px;
+}
+.container .section.contactus .card-form-item{
+    font-size:12px;
+    margin:12px 0px;
+}
+.container .section.contactus .card-form-item .label{
+    width:45px;
+    display:inline-block;
+    vertical-align: top;
+    text-align:right;
+}
+
+.container .section.contactus .card-form-item .label{
+    width:45px;
+    display:inline-block;
+    vertical-align: top;
+    text-align:right;
+}
+
+
+.container .section.contactus .card_1 .card-form-item .label{
+    width:34px;
+}
+.container .section.contactus .card-form-item .text{
+    display:inline-block;
+    width:275px;
+}
+

@@ -1,0 +1,323 @@
+<%
+  locals.pageName ="fashionlink_index";
+  locals.pageId = "800001";
+  var locale = res.getLocale();
+%>
+<div class="container">
+  <a class="back-top" href="#body" data-scroll id="backTop"><%=i18n('top')%></a>
+  <div class="header clearfix" id="header" data-plugin="touchScroll">
+      <div class="nav clearfix touch-scroll-view" >
+          <a class="nav-item active" data-scroll href="#AboutUs" data-target="#AboutUs"><%= i18n("About us")%><i class="line"></i></a>
+          <a class="nav-item" data-scroll href="#Advantages" data-target="#Advantages"><%= i18n("Advantages")%><i class="line"></i></a>
+          <a class="nav-item" data-scroll href="#Services" data-target="#Services"><%= i18n("Services")%><i class="line"></i></a>
+          <a class="nav-item" data-scroll href="#Products" data-target="#Products"><%= i18n("Products")%><i class="line"></i></a>
+          <a class="nav-item" data-scroll href="#SelfBrand" data-target="#SelfBrand"><%= i18n("Self-brand")%><i class="line"></i></a>
+          <a class="nav-item" data-scroll href="#Issues" data-target="#Issues"><%= i18n("Issues")%><i class="line"></i></a>
+          <a class="nav-item" data-scroll  href="#ContactUs" data-target="#ContactUs"><%= i18n("Contact us")%><i class="line"></i></a>
+      </div>
+  </div>
+  <div class="banner" id="banner">
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="<%=cndUrl%>/images/mobile/banner_01_<%=locale%>.jpg"/>
+            </div>
+            <div class="swiper-slide banner-2">
+              <img src="<%=cndUrl%>/images/mobile/banner_02_<%=locale%>.jpg"/>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="sections">
+    <!-- About us -->
+    <div class="section" id="AboutUs">
+      <div class="section-inner">
+          <h5 class="title">
+            <%= i18n("About us")%>
+            <div class="decoration"><i class="line-left"></i><i class="rhomebus_min"></i><i class="line-right"></i></div>
+          </h5>
+          <div class="aboutus">
+            <div class="video">
+              <video id="my-player" class="video-js"  poster="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+                <source src="<%=videoCdnUrl%>/lianshang.mp4" type="video/mp4"></source>
+              </video>
+            </div>
+             <div class="des-box fit">
+                <h5 class="des-title"><%=i18n('The introduction of Lianshang Group')%><i class="line"></i></h5>
+                <div class="des-content"><%=i18n('Introduction')%></div>
+            </div>
+            <div class="vision"><img class="fit-width" src="<%=cndUrl%>/images/vision.jpg"/></div>
+            <div class="vertical-middle des-box fit">
+                <h5 class="des-title"><%=i18n('Vision of Lianshang')%><i class="line"></i></h5>
+                <div class="des-content"><%=i18n('Vision description')%></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Advantages -->
+     <div class="section advantages" id="Advantages">
+        <div class="section-inner">
+            <h5 class="title">
+              <%= i18n("Advantages")%>
+           <div class="decoration"><i class="line-left"></i><i class="rhomebus_min"></i><i class="line-right"></i></div>
+            </h5>
+            <div class="clearfix">
+              <!-- adv 1-->
+              <div class="adv clearfix">
+                  <img class="section-pic" data-src="<%=cndUrl%>/images/adv_01.png"/>
+                  <div class="des-box">
+                          <h5 class="des-title"><%=i18n('Quickly  Sourcing  Response')%><i class="line"></i></h5>
+                          <div class="des-content"><%=i18n('Quickly description')%></div>
+                  </div>
+              </div>
+              <!-- adv 2-->
+              <div class="adv clearfix">
+                  <img class="section-pic" data-src="<%=cndUrl%>/images/adv_02.png"/>
+                  <div class="des-box">
+                      <h5 class="des-title"><%=i18n('Early Inspection')%><i class="line"></i></h5>
+                      <div class="des-content"><%=i18n('Early description')%></div>
+                  </div>
+              </div>
+              <!-- adv 3-->
+              <div class="adv clearfix">
+                  <img class="section-pic" data-src="<%=cndUrl%>/images/adv_03.png"/>
+                  <div class="des-box">
+                      <h5 class="des-title"><%=i18n('Innovation support')%><i class="line"></i></h5>
+                      <div class="des-content"><%=i18n('Innovation description')%></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Services -->
+     <div class="section services" id="Services">
+        <div class="section-inner">
+          <h5 class="title">
+            <%= i18n("Services")%>
+         <div class="decoration"><i class="line-left"></i><i class="rhomebus_min"></i><i class="line-right"></i></div>
+          </h5>
+          <div class="service-list">
+            <div class="service sourcing">
+                <div class="service-title"><%=i18n('SOURCING')%></div>
+                <div class="service-content">
+                    <p><%=i18n('Quick Sourcing')%></p>
+                    <p><%=i18n('Efficiency Promotion')%></p>
+                </div>
+            </div>
+            <div class="service perching">
+                <div class="service-title"><%=i18n('PERCHING')%></div>
+                 <div class="service-content">
+                    <p><%=i18n('Professional Perching')%></p>
+                    <p><%=i18n('Quality Guarantee')%></p>
+                </div>
+            </div>
+            <div class="service logistics">
+                <div class="service-title"><%=i18n('LOGISTICS')%></div>
+                 <div class="service-content">
+                    <p><%=i18n('Visual Logistics')%></p>
+                    <p><%=i18n('Safety Delivery')%></p>
+                </div>
+            </div>
+            <div class="service custom-service">
+                <div class="service-title"><%=i18n('CUSTOMER SERVICE')%></div>
+                 <div class="service-content">
+                    <p><%=i18n('Quick Sourcing')%></p>
+                    <p><%=i18n('Efficiency Promotion')%></p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Products -->
+     <div class="section products" id="Products">
+        <div class="section-inner">
+          <h5 class="title">
+              <%= i18n("Products")%>
+             <div class="decoration"><i class="line-left"></i><i class="rhomebus_min"></i><i class="line-right"></i></div>
+              <div class="center">
+                <a class="jump" href="https://www.lianshang.com?ls_activity_id=411525755&ls_source_id=1007&ls_content=fashionlink" target="_blank">www.lianshang.com ></a>
+              </div>
+          </h5>
+          <div class="comp"><img class="section-pic" data-src="<%=cndUrl%>/images/comp.png"/></div>
+          <div class="vcodes clearfix">
+            <div class="vcode buyer">
+                <img class="vcode-img" src="<%=cndUrl%>/images/mobile/vcode_buyer.jpg"/>
+                <div class="vcode-content">
+                  <div class="vertical-middle"><%= i18n('Scanning to download the APP for buyers')%></div>
+                </div>
+            </div>
+            <div class="vcode seller">
+                <img class="vcode-img" src="<%=cndUrl%>/images/mobile/vcode_seller.jpg"/>
+                <div class="vcode-content">
+                 <div class="vertical-middle"><%= i18n('Scanning to download  the APP for suppliers')%></div>
+                </div>
+            </div>
+            <div class="vcode mobile">
+                 <img class="vcode-img" src="<%=cndUrl%>/images/mobile/vcode_mobile.jpg"/>
+                 <div class="vcode-content">
+                  <div class="vertical-middle"><%= i18n('Scanning to keep in  touch with us')%></div>
+                 </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Self-brand -->
+     <div class="section self-brand" id="SelfBrand">
+        <div class="section-inner">
+         <h5 class="title">
+            <%= i18n("Self-brand")%>
+            <div class="decoration"><i class="line-left"></i><i class="rhomebus_min"></i><i class="line-right"></i></div>
+        </h5>
+        <img class="section-pic" data-src="<%=cndUrl%>/images/brand_01.png"/>
+         <div class="des-box">
+              <div class="des-content">
+                  <%=i18n('Self-brand description')%>
+                  <a class="btn-more" target="_blank" href="https://www.lianshang.com/shopdc/release/home/2044462?ls_activity_id=411525755&ls_source_id=1007&ls_content=fashionlink">
+                  <%=i18n('more')%>
+                  </a>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- Issues -->
+     <div class="section issues" id="Issues">
+        <div class="section-inner">
+            <h5 class="title">
+              <%= i18n("Issues")%>
+             <div class="decoration"><i class="line-left"></i><i class="rhomebus_min"></i><i class="line-right"></i></div>
+            </h5>
+            <div id="cd-timeline" class="cd-container">
+                <div class="before"></div>
+            	  <div class="cd-timeline-block">
+                  <div class="cd-timeline-img cd-movie bounce-in">
+                    <img src="<%=cndUrl%>/images/timeline-icon.png" alt="Picture">
+                  </div> 
+                  <div class="cd-timeline-content">
+                    <img data-src="<%=cndUrl%>/images/timeline_01.png"/>
+                    <div class="cd-date">
+                      <p class="time">2015.1</p>
+                      <%=i18n('issue1')%>
+                    </div>
+                  </div> 
+                </div> <!-- cd-timeline-block -->
+                <div class="cd-timeline-block">
+                  <div class="cd-timeline-img cd-movie bounce-in">
+                    <img src="<%=cndUrl%>/images/timeline-icon.png" alt="Picture">
+                  </div> 
+                  <div class="cd-timeline-content">
+                    <img data-src="<%=cndUrl%>/images/timeline_02.png"/>
+                    <div class="cd-date">
+                      <p class="time">2015.1</p>
+                      <%=i18n('issue2')%>
+                    </div>
+                  </div> 
+                </div> <!-- cd-timeline-block -->
+                <div class="cd-timeline-block">
+                  <div class="cd-timeline-img cd-movie bounce-in">
+                    <img src="<%=cndUrl%>/images/timeline-icon.png" alt="Picture">
+                  </div> 
+                  <div class="cd-timeline-content">
+                    <img data-src="<%=cndUrl%>/images/timeline_03.png"/>
+                    <div class="cd-date">
+                      <p class="time">2015.8</p>
+                      <%=i18n('issue3')%>
+                    </div>
+                  </div> 
+                </div> <!-- cd-timeline-block -->
+                <div class="cd-timeline-block">
+                  <div class="cd-timeline-img cd-movie bounce-in">
+                    <img src="<%=cndUrl%>/images/timeline-icon.png" alt="Picture">
+                  </div> 
+                  <div class="cd-timeline-content">
+                    <img data-src="<%=cndUrl%>/images/timeline_04.png"/>
+                    <div class="cd-date">
+                      <p class="time">2016.3</p>
+                      <%=i18n('issue4')%>
+                    </div>
+                  </div> 
+                </div> <!-- cd-timeline-block -->
+                <div class="cd-timeline-block">
+                  <div class="cd-timeline-img cd-movie bounce-in">
+                    <img src="<%=cndUrl%>/images/timeline-icon.png" alt="Picture">
+                  </div> 
+                  <div class="cd-timeline-content">
+                    <img data-src="<%=cndUrl%>/images/timeline_05.png"/>
+                    <div class="cd-date">
+                      <p class="time">2016.9</p>
+                      <%=i18n('issue5')%>
+                    </div>
+                  </div> 
+                </div> <!-- cd-timeline-block -->
+                <div class="cd-timeline-block">
+                  <div class="cd-timeline-img cd-movie bounce-in">
+                    <img src="<%=cndUrl%>/images/timeline-icon.png" alt="Picture">
+                  </div> 
+                  <div class="cd-timeline-content">
+                    <img data-src="<%=cndUrl%>/images/timeline_06.png"/>
+                    <div class="cd-date">
+                      <p class="time">2017.2</p>
+                      <%=i18n('issue6')%>
+                    </div>
+                  </div> 
+                </div> <!-- cd-timeline-block -->
+                <div class="cd-timeline-block">
+                  <div class="cd-timeline-img cd-movie bounce-in">
+                    <img src="<%=cndUrl%>/images/timeline-icon.png" alt="Picture">
+                  </div> 
+                  <div class="cd-timeline-content">
+                    <img data-src="<%=cndUrl%>/images/timeline_07.png"/>
+                    <div class="cd-date">
+                      <p class="time">2017.3</p>
+                      <%=i18n('issue7')%>
+                    </div>
+                  </div> 
+                </div> <!-- cd-timeline-block -->
+                <i class="timeline-end"></i>
+                <div class="after"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact us -->
+     <div class="section contactus" id="ContactUs">
+        <div class="section-inner">
+            <h5 class="title">
+              <%= i18n("Contact us")%>
+             <div class="decoration"><i class="line-left"></i><i class="rhomebus_min"></i><i class="line-right"></i></div>
+            </h5>
+            <div class="clearfix">
+              <div class="card card_1">
+                  <div class="card-title"><%=i18n('Lianshang International, Shaoxing Branch')%></div>
+                  <p class="card-form-item">
+                    <span class="label"><%=i18n('Tel')%> :</span>
+                    <span class="text">0086-575-85675885 </span>
+                  </p>
+                  <p class="card-form-item">
+                    <span class="label"><%=i18n('Add')%> :</span>
+                    <span class="text"><%=i18n('Add 1')%></span>
+                  </p>
+              </div>
+              <div class="card">
+                  <div class="card-title"><%=i18n('Vietnam Branch')%></div>
+                  <p class="card-form-item">
+                    <span class="label"><%=i18n('Atten')%> :</span>
+                    <span class="text"><%=i18n('Ryan Zhang')%></span>
+                  </p>
+                   <p class="card-form-item">
+                    <span class="label"><%=i18n('Tel')%> :</span>
+                    <span class="text">0084-854136116 </span>
+                  </p>
+                   <p class="card-form-item">
+                    <span class="label"><%=i18n('E-mail')%> :</span>
+                    <span class="text">Ryan.zhang@lianshang.com </span>
+                  </p>
+                   <p class="card-form-item">
+                    <span class="label"><%=i18n('Add')%> :</span>
+                    <span class="text"><%=i18n('Add 2')%></span>
+                  </p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
